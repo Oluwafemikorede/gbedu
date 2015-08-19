@@ -1,0 +1,455 @@
+<p>Error on Aug 19, 2015 17:32PM - ksort() expects parameter 1 to be array, null given in /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php on line 161</p><h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 19, 2015 14:16PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type.category_id' in 'on clause'</p>
+
+           <p><strong>Code:</strong> 42S22</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 124</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(124): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Models/Album.php(84): Helpers\Database->selectRow('SELECT * FROM a...', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(87): Models\Album::id('album_slug', 'gbedu-album')
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->add(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 19, 2015 14:14PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'album.album_status_id' in 'on clause'</p>
+
+           <p><strong>Code:</strong> 42S22</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 124</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(124): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Models/Album.php(84): Helpers\Database->selectRow('SELECT * FROM a...', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(87): Models\Album::id('album_slug', 'gbedu-album')
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->add(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<p>Error on Aug 19, 2015 14:13PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.add.php on line 63</p><p>Error on Aug 19, 2015 13:07PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.item.php on line 142</p><p>Error on Aug 19, 2015 13:07PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.item.php on line 142</p><h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 19, 2015 12:41PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gbedu`.`album`, CONSTRAINT `FK_album_user` FOREIGN KEY (`album_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE)</p>
+
+           <p><strong>Code:</strong> 23000</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 149</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(149): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Model.php(68): Helpers\Database->insert('`album`', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(203): Core\Model->create(Array)
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->playlist(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 19, 2015 12:40PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gbedu`.`album`, CONSTRAINT `FK_album_user` FOREIGN KEY (`album_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE)</p>
+
+           <p><strong>Code:</strong> 23000</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 149</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(149): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Model.php(68): Helpers\Database->insert('`album`', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(202): Core\Model->create(Array)
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->playlist(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<p>Error on Aug 19, 2015 9:12AM - extract() expects parameter 1 to be array, null given in /Applications/MAMP/htdocs/gbedu/cms/app/Core/View.php on line 32</p><h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 19, 2015 8:59AM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gbedu`.`album`, CONSTRAINT `FK_album_user` FOREIGN KEY (`album_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE)</p>
+
+           <p><strong>Code:</strong> 23000</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 149</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(149): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Model.php(68): Helpers\Database->insert('`album`', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(71): Core\Model->create(Array)
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->index(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 18, 2015 20:42PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gbedu`.`album`, CONSTRAINT `FK_album_user` FOREIGN KEY (`album_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE)</p>
+
+           <p><strong>Code:</strong> 23000</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 149</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(149): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Model.php(68): Helpers\Database->insert('`album`', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(71): Core\Model->create(Array)
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->index(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<p>Error on Aug 18, 2015 13:53PM - filesize(): stat failed for /Applications/MAMP/tmp/php/phpSkRQ8M in /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Upload.php on line 160</p><h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 18, 2015 13:50PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'song.song_category_id' in 'on clause'</p>
+
+           <p><strong>Code:</strong> 42S22</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 102</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(102): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Models/Song.php(47): Helpers\Database->select('SELECT *  FROM ...')
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(195): Models\Song->items(NULL)
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->items(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<p>Error on Aug 18, 2015 13:02PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.edit.php on line 165</p><p>Error on Aug 18, 2015 13:02PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.edit.php on line 165</p><p>Error on Aug 18, 2015 13:02PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.edit.php on line 165</p><p>Error on Aug 18, 2015 13:02PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.edit.php on line 165</p><h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 18, 2015 13:02PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'song.song_category_id' in 'on clause'</p>
+
+           <p><strong>Code:</strong> 42S22</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 124</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(124): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Models/Song.php(63): Helpers\Database->selectRow('SELECT *  FROM ...')
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(372): Models\Song->item('4')
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->edit(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 18, 2015 13:01PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '4' at line 5</p>
+
+           <p><strong>Code:</strong> 42000</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 124</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(124): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Models/Song.php(64): Helpers\Database->selectRow('SELECT *  FROM ...')
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(372): Models\Song->item('4')
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->edit(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<p>Error on Aug 18, 2015 12:52PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.edit.php on line 50</p><p>Error on Aug 18, 2015 12:52PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.edit.php on line 50</p><p>Error on Aug 18, 2015 12:40PM - ksort() expects parameter 1 to be array, null given in /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php on line 161</p><p>Error on Aug 18, 2015 12:24PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php on line 200</p><p>Error on Aug 18, 2015 12:21PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php on line 199</p><p>Error on Aug 18, 2015 12:21PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php on line 199</p><h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 18, 2015 12:20PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'song_status_id' in 'field list'</p>
+
+           <p><strong>Code:</strong> 42S22</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 149</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(149): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Model.php(68): Helpers\Database->insert('`song`', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(195): Core\Model->create(Array)
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->item(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 18, 2015 12:19PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'song_category_id' in 'field list'</p>
+
+           <p><strong>Code:</strong> 42S22</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 149</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(149): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Model.php(68): Helpers\Database->insert('`song`', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(196): Core\Model->create(Array)
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->item(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 18, 2015 12:16PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gbedu.genre' doesn't exist</p>
+
+           <p><strong>Code:</strong> 42S02</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 102</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(102): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Models/Song.php(29): Helpers\Database->select('SELECT *  FROM ...', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(247): Models\Song->album('51')
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->item(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<p>Error on Aug 18, 2015 11:43AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.item.php on line 196</p><p>Error on Aug 18, 2015 11:41AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.item.php on line 156</p><p>Error on Aug 18, 2015 11:41AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.item.php on line 156</p><p>Error on Aug 18, 2015 11:41AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/song/song.item.php on line 156</p><h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 18, 2015 11:38AM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '51' at line 6</p>
+
+           <p><strong>Code:</strong> 42000</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 102</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(102): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Models/Song.php(41): Helpers\Database->select('SELECT *  FROM ...', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Song.php(244): Models\Song->items('51')
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Song->item(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<p>Error on Aug 18, 2015 10:30AM - require(app/views/song/song.album.index.php): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gbedu/cms/app/Core/View.php on line 33</p><p>Error on Aug 17, 2015 18:40PM - ksort() expects parameter 1 to be array, null given in /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php on line 161</p><p>Error on Aug 17, 2015 17:17PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/views/artist/artist.index.php on line 55</p><p>Error on Aug 17, 2015 16:03PM - unlink(/Applications/MAMP/htdocs/gbedu/app/templates/default/images/): Operation not permitted in /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Album.php on line 597</p><p>Error on Aug 17, 2015 16:03PM - unlink(/Applications/MAMP/htdocs/gbedu/app/templates/default/images/): Operation not permitted in /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Album.php on line 597</p><p>Error on Aug 17, 2015 16:02PM - unlink(/Applications/MAMP/htdocs/gbedu/app/templates/default/images/): Operation not permitted in /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Album.php on line 597</p><p>Error on Aug 17, 2015 15:59PM - ksort() expects parameter 1 to be array, null given in /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php on line 161</p><p>Error on Aug 17, 2015 12:52PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Album.php on line 72</p><h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 13, 2015 18:13PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'device.device_status_id' in 'on clause'</p>
+
+           <p><strong>Code:</strong> 42S22</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 124</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(124): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Models/Media.php(70): Helpers\Database->selectRow('SELECT * FROM m...', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Album.php(498): Models\Media::row('media_id', '221')
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Album->edit(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 13, 2015 18:13PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'device.device_partner_id' in 'on clause'</p>
+
+           <p><strong>Code:</strong> 42S22</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 124</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(124): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Models/Media.php(70): Helpers\Database->selectRow('SELECT * FROM m...', Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Album.php(498): Models\Media::row('media_id', '221')
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Album->edit(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 13, 2015 17:19PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'media_file' in 'field list'</p>
+
+           <p><strong>Code:</strong> 42S22</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 191</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/gbedu/cms/app/Helpers/Database.php(191): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Model.php(151): Helpers\Database->update('`album`', Array, Array)
+#2 /Applications/MAMP/htdocs/gbedu/cms/app/Controllers/Album.php(102): Core\Model->updateId(Array, '45')
+#3 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(132): Controllers\Album->index(Array)
+#4 /Applications/MAMP/htdocs/gbedu/cms/app/Core/Router.php(243): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/gbedu/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Aug 07, 2015 0:49AM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'task_brief' in 'field list'</p>
+
+           <p><strong>Code:</strong> 42S22</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/evets/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 149</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/evets/cms/app/Helpers/Database.php(149): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/evets/cms/app/Core/Model.php(68): Helpers\Database->insert('`service`', Array)
+#2 /Applications/MAMP/htdocs/evets/cms/app/Controllers/Client.php(187): Core\Model->create(Array)
+#3 /Applications/MAMP/htdocs/evets/cms/app/Core/Router.php(138): Controllers\Client->task(Array)
+#4 /Applications/MAMP/htdocs/evets/cms/app/Core/Router.php(250): Core\Router::autoDispatch()
+#5 /Applications/MAMP/htdocs/evets/cms/index.php(80): Core\Router::dispatch()
+#6 {main}</pre>
+
+           <hr />
+<p>Error on Aug 06, 2015 23:07PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/client/client.task.php on line 51</p><p>Error on Aug 06, 2015 23:06PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/client/client.task.php on line 51</p><p>Error on Aug 06, 2015 23:06PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/client/client.task.php on line 51</p><p>Error on Jul 31, 2015 9:46AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 139</p><p>Error on Jul 31, 2015 9:43AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 144</p><p>Error on Jul 31, 2015 9:30AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 144</p><p>Error on Jul 31, 2015 9:30AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 144</p><p>Error on Jul 31, 2015 9:22AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 144</p><p>Error on Jul 31, 2015 9:22AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 144</p><p>Error on Jul 31, 2015 9:22AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 144</p><p>Error on Jul 31, 2015 8:34AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 144</p><p>Error on Jul 31, 2015 8:34AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 144</p><p>Error on Jul 31, 2015 8:34AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 144</p><p>Error on Jul 31, 2015 8:34AM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/pages/editcontent.php on line 144</p><p>Error on Jul 28, 2015 12:10PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/post/post.add.php on line 53</p><p>Error on Jul 07, 2015 21:47PM - move_uploaded_file(/Applications/MAMP/htdocs/evets/cms/app/templates/default/images/omolara45559c3adc38ea9.jpeg): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/evets/cms/app/Helpers/Upload.php on line 163</p>
+
+<p>Error on Jul 07, 2015 21:45PM - move_uploaded_file(/Applications/MAMP/htdocs/evets/cms/app/templates/default/images/omolara44559c3a4da783b.jpeg): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/evets/cms/app/Helpers/Upload.php on line 163</p>
+
+<p>Error on Jul 07, 2015 21:39PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/consultant/consultant.add.php on line 110</p>
+
+<p>Error on Jul 07, 2015 21:39PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/consultant/consultant.add.php on line 110</p>
+
+<p>Error on Jul 07, 2015 21:36PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/consultant/consultant.add.php on line 110</p>
+
+<p>Error on Jul 07, 2015 21:35PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/consultant/consultant.add.php on line 110</p>
+
+<p>Error on Jul 07, 2015 21:12PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/consultant/consultant.add.php on line 88</p>
+
+<p>Error on Jul 07, 2015 19:33PM - Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/evets/cms/app/views/dancer/dancer.add.php on line 88</p>
+
+<p>Error on Jul 07, 2015 19:23PM - require(app/views/dashboard/dashboard.index.php): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/evets/cms/app/Core/View.php on line 32</p><p>Error on Jul 07, 2015 19:06PM - require(app/templates/default/sidebar.php): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/evets/cms/app/Core/View.php on line 66</p><h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Jul 07, 2015 19:03PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)</p>
+
+           <p><strong>Code:</strong> 1045</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/evets/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 57</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/evets/cms/app/Helpers/Database.php(57): PDO->__construct('mysql:host=127....', 'root', 'password')
+#1 /Applications/MAMP/htdocs/evets/cms/app/Core/Model.php(29): Helpers\Database::get()
+#2 /Applications/MAMP/htdocs/evets/cms/app/models/user.php(15): Core\Model->__construct()
+#3 /Applications/MAMP/htdocs/evets/cms/app/Controllers/Dashboard.php(35): Models\User->__construct()
+#4 /Applications/MAMP/htdocs/evets/cms/app/Core/Router.php(129): Controllers\Dashboard->index(Array)
+#5 /Applications/MAMP/htdocs/evets/cms/app/Core/Router.php(239): Core\Router::autoDispatch()
+#6 /Applications/MAMP/htdocs/evets/cms/index.php(83): Core\Router::dispatch()
+#7 {main}</pre>
+
+           <hr />
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Jul 07, 2015 18:55PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)</p>
+
+           <p><strong>Code:</strong> 1045</p>
+
+           <p><strong>File:</strong> /Applications/MAMP/htdocs/evets/cms/app/Helpers/Database.php</p>
+
+           <p><strong>Line:</strong> 57</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 /Applications/MAMP/htdocs/evets/cms/app/Helpers/Database.php(57): PDO->__construct('mysql:host=127....', 'root', 'password')
+#1 /Applications/MAMP/htdocs/evets/cms/app/core/model.php(29): Helpers\Database::get()
+#2 /Applications/MAMP/htdocs/evets/cms/app/models/user.php(14): Core\Model->__construct()
+#3 /Applications/MAMP/htdocs/evets/cms/app/Controllers/Dashboard.php(35): models\User->__construct()
+#4 /Applications/MAMP/htdocs/evets/cms/app/Core/Router.php(129): Controllers\Dashboard->index(Array)
+#5 /Applications/MAMP/htdocs/evets/cms/app/Core/Router.php(239): Core\Router::autoDispatch()
+#6 /Applications/MAMP/htdocs/evets/cms/index.php(83): Core\Router::dispatch()
+#7 {main}</pre>
+
+           <hr />
