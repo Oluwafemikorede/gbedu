@@ -30,9 +30,9 @@ $hooks = Hooks::get();
                       <!-- <div class="item" style="background: url(<?php //Assets::showBg($item->album_image); ?>); height: 200px"> -->
                       <div class="item" >
                         <div class="pos-rlt">
-                          <div class="bottom">
+                          <!-- <div class="bottom">
                             <span class="badge bg-info m-l-sm m-b-sm">03:20</span>
-                          </div>
+                          </div> -->
                           <div class="item-overlay opacity r r-2x bg-black">
                             <div class="text-info padder m-t-sm text-sm">
                               <i class="fa fa-star"></i>
@@ -711,7 +711,6 @@ $hooks = Hooks::get();
                       </div>
                       <div class="jp-playlist dropup" id="playlist">
                         <ul class="dropdown-menu aside-xl dker">
-                          <!-- The method Playlist.displayPlaylist() uses this unordered list -->
                           <li class="list-group-item"></li>
                         </ul>
                       </div>
@@ -725,7 +724,7 @@ $hooks = Hooks::get();
               </section>
             </section>
             <!-- side content -->
-            <aside class="aside-md bg-light dk" id="sidebar">
+            <!-- <aside class="aside-md bg-light dk" id="sidebar">
               <section class="vbox animated fadeInRight">
                 <section class="w-f-md scrollable hover">
                   <h4 class="font-thin m-l-md m-t">Connected</h4>
@@ -865,7 +864,7 @@ $hooks = Hooks::get();
                   </form>
                 </footer>
               </section>              
-            </aside>
+            </aside> -->
             <!-- / side content -->
           </section>
           <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>

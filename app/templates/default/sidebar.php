@@ -55,14 +55,14 @@ $hooks = Hooks::get();
       <div class="navbar-right ">
         <ul class="nav navbar-nav m-n hidden-xs nav-user user">
           <li class="hidden-xs">
-            <a href="#" class="dropdown-toggle lt" data-toggle="dropdown">
+            <!-- <a href="#" class="dropdown-toggle lt" data-toggle="dropdown">
               <i class="icon-bell"></i>
               <span class="badge badge-sm up bg-danger count">2</span>
-            </a>
+            </a> -->
 
 
 
-            <section class="dropdown-menu aside-xl animated fadeInUp">
+          <!--   <section class="dropdown-menu aside-xl animated fadeInUp">
               <section class="panel bg-white">
                 <div class="panel-heading b-light bg-light">
                   <strong>You have <span class="count">2</span> notifications</strong>
@@ -89,7 +89,7 @@ $hooks = Hooks::get();
                   <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
                 </div>
               </section>
-            </section>
+            </section> -->
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle bg clear" data-toggle="dropdown">
@@ -439,7 +439,7 @@ $hooks = Hooks::get();
               </div>
             </section>
             
-            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+            <!-- <footer class="footer hidden-xs no-padder text-center-nav-xs">
               <div class="bg hidden-xs ">
                   <div class="dropdown dropup wrapper-sm clearfix">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -478,6 +478,6 @@ $hooks = Hooks::get();
                       </li>
                     </ul>
                   </div>
-                </div>            </footer>
+                </div>            </footer> -->
           </section>
         </aside>
